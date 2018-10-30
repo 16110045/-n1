@@ -1,0 +1,44 @@
+D:\Đồ Án 1\Đồ Án 1\bin\Debug\Đồ Án 1.exe.config
+D:\Đồ Án 1\Đồ Án 1\bin\Debug\Đồ Án 1.exe
+D:\Đồ Án 1\Đồ Án 1\bin\Debug\Đồ Án 1.pdb
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csprojResolveAssemblyReference.cache
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmGiaoVien.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmMain.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.Properties.Resources.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.GenerateResource.Cache
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.CoreCompileInputs.cache
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.exe
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.pdb
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmNganh.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmLop.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmXepThoiKhoaBieu.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmPhongHoc.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmBoMon.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmLogin.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmThongTin.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmTiet.resources
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Interop.LCC11.dll
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.ResolveComReference.cache
+D:\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmMonHoc.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\bin\Debug\Đồ Án 1.exe.config
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\bin\Debug\Đồ Án 1.exe
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\bin\Debug\Đồ Án 1.pdb
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csprojResolveAssemblyReference.cache
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Interop.LCC11.dll
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.ResolveComReference.cache
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmBoMon.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmLogin.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmLop.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmGiaoVien.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmMain.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmMonHoc.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmNganh.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmPhongHoc.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmThongTin.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmTiet.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmXepThoiKhoaBieu.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.Properties.Resources.resources
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.GenerateResource.Cache
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.CoreCompileInputs.cache
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.exe
+D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.pdb
