@@ -42,3 +42,25 @@ D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.GenerateResou
 D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.CoreCompileInputs.cache
 D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.exe
 D:\Năm 3 hk1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.pdb
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\bin\Debug\Đồ Án 1.exe.config
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\bin\Debug\Đồ Án 1.exe
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\bin\Debug\Đồ Án 1.pdb
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Interop.LCC11.dll
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.ResolveComReference.cache
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmBoMon.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmLogin.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmLop.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmGiaoVien.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmMain.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmMonHoc.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmNganh.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmPhongHoc.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmThongTin.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmTiet.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.frmXepThoiKhoaBieu.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ_Án_1.Properties.Resources.resources
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.exe
+C:\Users\Admin\Desktop\Đồ Án1\-n1\Đồ Án 1\Đồ Án 1\obj\Debug\Đồ Án 1.pdb

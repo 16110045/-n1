@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using Microsoft.Office.Interop.Excel;
 using app = Microsoft.Office.Interop.Excel.Application;
 
 namespace Đồ_Án_1
@@ -204,7 +204,7 @@ namespace Đồ_Án_1
                             {
                                 lopmh.SoTiet = 3;
                             }
-                            else if (lopmh.MaMH == 16 || lopmh.MaMH == 8 || lopmh.MaMH==19) //gdqp1 ,maclenin,gdtc1
+                            else if (lopmh.MaMH == 16 || lopmh.MaMH == 8 || lopmh.MaMH == 19) //gdqp1 ,maclenin,gdtc1
                             {
                                 lopmh.SoTiet = 2;
                             }
@@ -261,7 +261,7 @@ namespace Đồ_Án_1
                             {
                                 lopmh.SoTiet = 4;
                             }
-                            else if (lopmh.MaMH == 19 || lopmh.MaMH==17) //gdtc1,gdqp2
+                            else if (lopmh.MaMH == 19 || lopmh.MaMH == 17) //gdtc1,gdqp2
                             {
                                 lopmh.SoTiet = 2;
                             }
@@ -280,7 +280,7 @@ namespace Đồ_Án_1
                             {
                                 lopmh.SoTiet = 4;
                             }
-                            else if (lopmh.MaMH == 17 || lopmh.MaMH==20) //gdqp2,gdtc2
+                            else if (lopmh.MaMH == 17 || lopmh.MaMH == 20) //gdqp2,gdtc2
                             {
                                 lopmh.SoTiet = 2;
                             }
@@ -299,7 +299,7 @@ namespace Đồ_Án_1
                             {
                                 lopmh.SoTiet = 4;
                             }
-                            else if (lopmh.MaMH == 21 || lopmh.MaMH==16) //gctc3,gdqp1
+                            else if (lopmh.MaMH == 21 || lopmh.MaMH == 16) //gctc3,gdqp1
                             {
                                 lopmh.SoTiet = 2;
                             }
@@ -346,152 +346,152 @@ namespace Đồ_Án_1
                         dem++;
                     }
                 }
-            
 
-            //Giáo viên nào dạy lớp nào 
-            dem = 1;
-            Random ra = new Random();
-            for (int i = 0; i < m; i++)
-            {
-                for (int j = 0; j < l; j++)
+
+                //Giáo viên nào dạy lớp nào 
+                dem = 1;
+                Random ra = new Random();
+                for (int i = 0; i < m; i++)
                 {
-                    Gv_Lop gvl = new Gv_Lop();
-                    gvl.stt = dem;
-                    gvl.MaLop = loho[j].MaLop; // tạo danh sách lớp môn học mới
-                    gvl.MaMH = moho[i].MaMH; 
-                    chon = new List<Chon>();
-                    int nchon = 0;
-                    for (int l = 0; l < GVMHTable.Count - 1; l++)
+                    for (int j = 0; j < l; j++)
                     {
-
-                        if (GVMHTable[l].MaMH == gvl.MaMH)
+                        Gv_Lop gvl = new Gv_Lop();
+                        gvl.stt = dem;
+                        gvl.MaLop = loho[j].MaLop; // tạo danh sách lớp môn học mới
+                        gvl.MaMH = moho[i].MaMH;
+                        chon = new List<Chon>();
+                        int nchon = 0;
+                        for (int l = 0; l < GVMHTable.Count - 1; l++)
                         {
-                            Chon ch = new Chon();
-                            ch.stt = nchon; //chọn số lượng môn học
-                            ch.MaGV = GVMHTable[l].MaGV;  // kiểm tra xem giáo viên này có phù hợp để dạy môn học này của lớp này hk
-                            chon.Add(ch);
-                            nchon++;
-                        }
-                    }
 
-                    int a;
-                    if (nchon > 1) a = ra.Next(nchon); // phải nhỏ hơn nchon và lớn hơn 0
-                    else a = 0;
-                    int magv = chon[a].MaGV; // chọn ngẫu nhiên giáo viên
-                    gvl.MaGV = magv; // giảng viên dạy lớp nào rồi
-                    for (int l = 0; l < LPTable.Count - 1; l++)
-                    {
-                        if (LPTable[l].MaLop == loho[j].MaLop)// kiểm tra trùng mã lớp k,,k trùng thì dạy
-                        {
-                            gvl.MaPH = LPTable[l].MaPH; // 
-                            break;
-                        }
-                    }
-                    GiaoVien_LopHoc.Add(gvl);
-                    dem++;
-                }
-
-            }
-            // lớp đó có môn học đó học bao nhiêu tiết
-            int tiet = 0;
-            dem = 1;
-            Random rd = new Random();
-            Random rd1 = new Random();
-
-            for (int it = 0; it < l; it++)
-            {
-                List<int> chonMh = new List<int>();
-                int sotiet = 0;
-                for (int i = 0; i < moho.Count - 1; i++) ////bỏ thể dục + quốc phòng
-                {
-                    sotiet = 0;
-                        if (moho[i].MaMH != 16 && moho[i].MaMH != 17 && moho[i].MaMH != 18 && moho[i].MaMH != 19 && moho[i].MaMH != 20 && moho[i].MaMH != 21)
-                        {
-                        for (int j = 0; j < Lop_Monhoc.Count - 1; j++)
-                        {
-                            if (Lop_Monhoc[j].MaMH == moho[i].MaMH && Lop_Monhoc[j].MaLop == loho[it].MaLop)
+                            if (GVMHTable[l].MaMH == gvl.MaMH)
                             {
-                                sotiet = Lop_Monhoc[j].SoTiet; // môn đó dạy lớp đó có bao nhiêu tiết
+                                Chon ch = new Chon();
+                                ch.stt = nchon; //chọn số lượng môn học
+                                ch.MaGV = GVMHTable[l].MaGV;  // kiểm tra xem giáo viên này có phù hợp để dạy môn học này của lớp này hk
+                                chon.Add(ch);
+                                nchon++;
+                            }
+                        }
+
+                        int a;
+                        if (nchon > 1) a = ra.Next(nchon); // phải nhỏ hơn nchon và lớn hơn 0
+                        else a = 0;
+                        int magv = chon[a].MaGV; // chọn ngẫu nhiên giáo viên
+                        gvl.MaGV = magv; // giảng viên dạy lớp nào rồi
+                        for (int l = 0; l < LPTable.Count - 1; l++)
+                        {
+                            if (LPTable[l].MaLop == loho[j].MaLop)// kiểm tra trùng mã lớp k,,k trùng thì dạy
+                            {
+                                gvl.MaPH = LPTable[l].MaPH; // 
                                 break;
                             }
                         }
-                        for (int j = 0; j < sotiet; j++) //Số lần xuất hiện môn học trong List chonMh
-                        {
-                            chonMh.Add(Lop_Monhoc[i].MaMH);
-                        }
+                        GiaoVien_LopHoc.Add(gvl);
+                        dem++;
                     }
 
                 }
+                // lớp đó có môn học đó học bao nhiêu tiết
+                int tiet = 0;
+                dem = 1;
+                Random rd = new Random();
+                Random rd1 = new Random();
 
-                if (Compare(loho[it].TenLop.ToString(), "1611") == true || (Compare(loho[it].TenLop.ToString(), "1613") == true
-                    || (Compare(loho[it].TenLop.ToString(), "1645") == true)))
+                for (int it = 0; it < l; it++)
                 {
-
-
-                    for (int th = 0; th < 6; th++)
+                    List<int> chonMh = new List<int>();
+                    int sotiet = 0;
+                    for (int i = 0; i < moho.Count - 1; i++)
                     {
-                        for (int i = 1; i <= 5; i++)//lớp buổi sáng
+                        sotiet = 0;
+                        if (moho[i].MaMH != 16 && moho[i].MaMH != 17 && moho[i].MaMH != 18 && moho[i].MaMH != 19 && moho[i].MaMH != 20 && moho[i].MaMH != 21)
                         {
-                            Lop_MonHoc_Tiet lgvmh = new Lop_MonHoc_Tiet();
-                            tiet = i + 10 * th;
-                            if (tiet == 29 || tiet == 30 || tiet == 45)
+                            for (int j = 0; j < Lop_Monhoc.Count - 1; j++)
                             {
-
+                                if (Lop_Monhoc[j].MaMH == moho[i].MaMH && Lop_Monhoc[j].MaLop == loho[it].MaLop)
+                                {
+                                    sotiet = Lop_Monhoc[j].SoTiet; // môn đó dạy lớp đó có bao nhiêu tiết
+                                    break;
+                                }
                             }
-                            else
+                            for (int j = 0; j < sotiet; j++) //Số lần xuất hiện môn học trong List chonMh
                             {
-                                int vt;
-                                if (chonMh.Count > 1) // điều kiện bảng chọn môn học 
-                                vt = rd.Next(chonMh.Count - 1); // chọn môn học ngẫu nhiên
-                                else vt = 0;
-                                lgvmh.stt = dem;
-                                lgvmh.MaLop = loho[it].MaLop;
-                                lgvmh.MaMH = chonMh[vt];
-                                lgvmh.MaTiet = tiet;
-                                if (chonMh.Count > 1)
-                                chonMh.RemoveAt(vt); // để k bị trùng
-                                Lop_T_MH.Add(lgvmh);
-                                dem++;
+                                chonMh.Add(Lop_Monhoc[i].MaMH);
+                            }
+                        }
+
+                    }
+
+                    if (Compare(loho[it].TenLop.ToString(), "1611") == true || (Compare(loho[it].TenLop.ToString(), "1613") == true
+                        || (Compare(loho[it].TenLop.ToString(), "1645") == true)))
+                    {
+
+
+                        for (int th = 0; th < 6; th++)
+                        {
+                            for (int i = 1; i <= 5; i++)//lớp buổi sáng
+                            {
+                                Lop_MonHoc_Tiet lgvmh = new Lop_MonHoc_Tiet();
+                                tiet = i + 10 * th;
+                                if (tiet == 29 || tiet == 30 || tiet == 45)
+                                {
+
+                                }
+                                else
+                                {
+                                    int vt;
+                                    if (chonMh.Count > 1) // điều kiện bảng chọn môn học 
+                                        vt = rd.Next(chonMh.Count - 1); // chọn bất kỳ mã môn học của môn học đã chọn 
+                                    else vt = 0;
+                                    lgvmh.stt = dem;
+                                    lgvmh.MaLop = loho[it].MaLop;
+                                    lgvmh.MaMH = chonMh[vt];
+                                    lgvmh.MaTiet = tiet;
+                                    if (chonMh.Count > 1)
+                                        chonMh.RemoveAt(vt); // để k bị trùng
+                                    Lop_T_MH.Add(lgvmh);
+                                    dem++;
+                                }
                             }
                         }
                     }
-                }
-                else
-                {
-                    for (int th = 0; th < 6; th++)
+                    else
                     {
-
-                        for (int i = 6; i <= 10; i++)//lớp buổi chieu
+                        for (int th = 0; th < 6; th++)
                         {
-                            Lop_MonHoc_Tiet lgvmh = new Lop_MonHoc_Tiet();
-                            tiet = i + 10 * th;
-                            if (tiet == 59 || tiet == 60 || tiet == 50)
-                            {
 
-                            }
-                            else
+                            for (int i = 6; i <= 10; i++)//lớp buổi chieu
                             {
-                                int vt;
-                                if (chonMh.Count > 1) vt = rd1.Next(chonMh.Count - 1);
-                                else vt = 0;
-                                lgvmh.stt = dem;
-                                lgvmh.MaLop = loho[it].MaLop;
-                                lgvmh.MaMH = chonMh[vt];
-                                lgvmh.MaTiet = tiet;
-                                if (chonMh.Count > 1)
-                                chonMh.RemoveAt(vt);
-                                Lop_T_MH.Add(lgvmh);
-                                dem++;
+                                Lop_MonHoc_Tiet lgvmh = new Lop_MonHoc_Tiet();
+                                tiet = i + 10 * th;
+                                if (tiet == 59 || tiet == 60 || tiet == 50)
+                                {
+
+                                }
+                                else
+                                {
+                                    int vt;
+                                    if (chonMh.Count > 1) vt = rd1.Next(chonMh.Count - 1);
+                                    else vt = 0;
+                                    lgvmh.stt = dem;
+                                    lgvmh.MaLop = loho[it].MaLop;
+                                    lgvmh.MaMH = chonMh[vt];
+                                    lgvmh.MaTiet = tiet;
+                                    if (chonMh.Count > 1)
+                                        chonMh.RemoveAt(vt);
+                                    Lop_T_MH.Add(lgvmh);
+                                    dem++;
+                                }
                             }
                         }
                     }
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show("Lỗi! " + ex.Message);
-        }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi! " + ex.Message);
+            }
     }
         int SoSanh(int s)
         {
@@ -535,12 +535,12 @@ namespace Đồ_Án_1
     {
         XepThoiKhoaBieuDataContext xl = new XepThoiKhoaBieuDataContext();
         int them = 1;
-        for (int i = 0; i < GiaoVien_LopHoc.Count - 1; i++)
-        {
-            for (int j = 0; j < Lop_T_MH.Count - 1; j++)
+            for (int i = 0; i < GiaoVien_LopHoc.Count - 1; i++)
             {
-                if (GiaoVien_LopHoc[i].MaLop == Lop_T_MH[j].MaLop && GiaoVien_LopHoc[i].MaMH == Lop_T_MH[j].MaMH)
+                for (int j = 0; j < Lop_T_MH.Count - 1; j++)
                 {
+                    if (GiaoVien_LopHoc[i].MaLop == Lop_T_MH[j].MaLop && GiaoVien_LopHoc[i].MaMH == Lop_T_MH[j].MaMH)
+                    {
 
                     ThoiKhoaBieu tkb1 = new ThoiKhoaBieu();
                     tkb1.MaGV = GiaoVien_LopHoc[i].MaGV;
