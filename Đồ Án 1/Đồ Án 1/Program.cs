@@ -16,7 +16,7 @@ namespace Đồ_Án_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmXepThoiKhoaBieu()); 
+            Application.Run(new frmLogin()); 
         }
     }
 }

@@ -173,7 +173,7 @@ namespace Đồ_Án_1
                         LPTable.Add(lopphong);
                         check++;
                     }
-                    if (check >= 2) // 3 lớp 1 phòng
+                    if (check >= 2)
                     {
                         ph++;
                         check = 0;
@@ -434,7 +434,7 @@ namespace Đồ_Án_1
                             {
                                 Lop_MonHoc_Tiet lgvmh = new Lop_MonHoc_Tiet();
                                 tiet = i + 10 * th;
-                                if (tiet == 29 || tiet == 30 || tiet == 45)
+                                if (tiet == 29 || tiet == 30 || tiet==35)
                                 {
 
                                 }
@@ -465,7 +465,7 @@ namespace Đồ_Án_1
                             {
                                 Lop_MonHoc_Tiet lgvmh = new Lop_MonHoc_Tiet();
                                 tiet = i + 10 * th;
-                                if (tiet == 59 || tiet == 60 || tiet == 50)
+                                if (tiet == 50 || tiet == 59 || tiet == 60)
                                 {
 
                                 }
@@ -1091,8 +1091,8 @@ namespace Đồ_Án_1
         btnXuatThoiKhoaBieu.Show();
     }  
         private void frmXepThoiKhoaBieu_Load(object sender, EventArgs e)
-        {
-            try
+        {   
+                try
             {
                 XThoiKhoaBieu();
                 lbl1.Hide();
